@@ -124,6 +124,11 @@ sudo nano /var/www/html/index.html
 ## ✅ Pruebas realizadas
 
 - [x] `ping 8.8.8.8` y navegación a Internet desde la LAN de usuarios
+<img width="224" height="109" alt="Captura de pantalla 2026-07-08 193251" src="https://github.com/user-attachments/assets/4d45bfb0-04c3-4bfc-a0ae-9506a008cb89" />
+
+
+
+
 - [x] `http://10.11.85.130` carga la página de Apache — tráfico HTTP permitido entre segmentos
       
 <img width="442" height="367" alt="Captura de pantalla 2026-07-07 223633" src="https://github.com/user-attachments/assets/dcc26985-79ab-4d71-921f-62aba131b7cd" />

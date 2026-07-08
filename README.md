@@ -124,22 +124,25 @@ sudo nano /var/www/html/index.html
 
 - [x] `ping 8.8.8.8` y navegación a Internet desde la LAN de usuarios
 - [x] `http://10.11.85.130` carga la página de Apache — tráfico HTTP permitido entre segmentos
-- [ ] 
+      
       <img width="442" height="367" alt="Captura de pantalla 2026-07-07 223633" src="https://github.com/user-attachments/assets/dcc26985-79ab-4d71-921f-62aba131b7cd" />
 
 - [x] `ping` / SSH / Nmap hacia el servidor desde la LAN de usuarios — bloqueado (implicit deny)
-- [ ] 
+      
       <img width="160" height="63" alt="image" src="https://github.com/user-attachments/assets/b74518a5-7d20-4826-8d05-64a25f451769" />
 
 - [x] Acceso a `facebook.com` / `instagram.com` — conexión rechazada (Web Filter + SSL Inspection)
+      
       <img width="533" height="347" alt="Captura de pantalla 2026-07-07 225416" src="https://github.com/user-attachments/assets/704c2dd9-bd5a-4ef0-b702-1785e3ec9247" />
 
       
 
 - [x] Acceso a `itla.edu.do` — página de bloqueo de FortiGuard
+      
 <img width="431" height="338" alt="Captura de pantalla 2026-07-07 230900" src="https://github.com/user-attachments/assets/f70a8062-3994-4db3-a159-631b1d70b2ad" />
 
-- [x] Logs verificados en `Log & Report > Web Filter` / `Forward Traffic` 
+- [x] Logs verificados en `Log & Report > Web Filter` / `Forward Traffic`
+      
 <img width="422" height="59" alt="Captura de pantalla 2026-07-08 010808" src="https://github.com/user-attachments/assets/2a324a9d-a294-4f27-89b8-f1ca702d3410" />
 
 <img width="281" height="107" alt="Captura de pantalla 2026-07-08 004026" src="https://github.com/user-attachments/assets/3d122a0e-861c-4f53-bc6d-0c22d5844f6e" />

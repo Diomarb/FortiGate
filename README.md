@@ -135,8 +135,6 @@ sudo nano /var/www/html/index.html
       
       <img width="533" height="347" alt="Captura de pantalla 2026-07-07 225416" src="https://github.com/user-attachments/assets/704c2dd9-bd5a-4ef0-b702-1785e3ec9247" />
 
-      
-
 - [x] Acceso a `itla.edu.do` — página de bloqueo de FortiGuard
       
 <img width="431" height="338" alt="Captura de pantalla 2026-07-07 230900" src="https://github.com/user-attachments/assets/f70a8062-3994-4db3-a159-631b1d70b2ad" />

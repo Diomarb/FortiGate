@@ -4,7 +4,7 @@
 
 # 🛡️ Laboratorio FortiGate — Seguridad Perimetral y Filtrado de Contenido
 
-<img src="https://img.shields.io/badge/Estudiante-Euni-1C3D8F?style=flat-square" />
+<img src="https://img.shields.io/badge/Estudiante-Eunice-1C3D8F?style=flat-square" />
 <img src="https://img.shields.io/badge/Matr%C3%ADcula-2024--1185-1C3D8F?style=flat-square" />
 <img src="https://img.shields.io/badge/Plataforma-GNS3-1C3D8F?style=flat-square" />
 <img src="https://img.shields.io/badge/Firewall-FortiGate--VM-0D1F4E?style=flat-square" />
@@ -106,9 +106,9 @@ sudo apt update && sudo apt install apache2 -y
 sudo systemctl enable apache2 --now
 ```
 Código
-sudo nano /var/www/html/index.html4
 ---
 ```
+sudo nano /var/www/html/index.html
 <!DOCTYPE html>
 <html>
 <body style="text-align:center; font-family: Arial; background-color: #f0f0f0;">
@@ -124,11 +124,27 @@ sudo nano /var/www/html/index.html4
 
 - [x] `ping 8.8.8.8` y navegación a Internet desde la LAN de usuarios
 - [x] `http://10.11.85.130` carga la página de Apache — tráfico HTTP permitido entre segmentos
+      <img width="442" height="367" alt="Captura de pantalla 2026-07-07 223633" src="https://github.com/user-attachments/assets/dcc26985-79ab-4d71-921f-62aba131b7cd" />
+
 - [x] `ping` / SSH / Nmap hacia el servidor desde la LAN de usuarios — bloqueado (implicit deny)
+      <img width="160" height="63" alt="image" src="https://github.com/user-attachments/assets/b74518a5-7d20-4826-8d05-64a25f451769" />
+
 - [x] Acceso a `facebook.com` / `instagram.com` — conexión rechazada (Web Filter + SSL Inspection)
+      <img width="533" height="347" alt="Captura de pantalla 2026-07-07 225416" src="https://github.com/user-attachments/assets/704c2dd9-bd5a-4ef0-b702-1785e3ec9247" />
+
+      
+
 - [x] Acceso a `itla.edu.do` — página de bloqueo de FortiGuard
-- [x] `nmap -sS -Pn 10.11.85.130` — detectado y bloqueado por el sensor IPS
-- [x] Logs verificados en `Log & Report > Web Filter` / `Forward Traffic` / `Intrusion Prevention`
+<img width="431" height="338" alt="Captura de pantalla 2026-07-07 230900" src="https://github.com/user-attachments/assets/f70a8062-3994-4db3-a159-631b1d70b2ad" />
+
+- [x] Logs verificados en `Log & Report > Web Filter` / `Forward Traffic` 
+<img width="422" height="59" alt="Captura de pantalla 2026-07-08 010808" src="https://github.com/user-attachments/assets/2a324a9d-a294-4f27-89b8-f1ca702d3410" />
+
+<img width="281" height="107" alt="Captura de pantalla 2026-07-08 004026" src="https://github.com/user-attachments/assets/3d122a0e-861c-4f53-bc6d-0c22d5844f6e" />
+
+<img width="488" height="290" alt="Captura de pantalla 2026-07-07 225723" src="https://github.com/user-attachments/assets/cd0d1126-f830-4e0c-92ba-01992a096436" />
+
+<img width="452" height="326" alt="image" src="https://github.com/user-attachments/assets/4bff9fd8-f18b-4406-abd1-a0fa139d7374" />
 
 ---
 
@@ -137,7 +153,6 @@ sudo nano /var/www/html/index.html4
 - El **SSL/SSH Inspection** (`certificate-inspection`, modo Proxy-based) es obligatorio para que el Web Filter tenga visibilidad del dominio (SNI) en tráfico HTTPS.
 - Facebook e Instagram pueden evadir la inspección TCP normal mediante **QUIC (HTTP/3 sobre UDP)** — se bloqueó la firma `QUIC` en Application Control para forzar el fallback a TLS estándar.
 - El **Static URL Filter** se usó en lugar del filtrado por categoría de FortiGuard para no depender de una licencia activa en el entorno de laboratorio.
-
 ---
 
 <div align="center">

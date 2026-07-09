@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/Matr%C3%ADcula-2024--1185-1C3D8F?style=flat-square" />
 <img src="https://img.shields.io/badge/Plataforma-GNS3-1C3D8F?style=flat-square" />
 <img src="https://img.shields.io/badge/Firewall-FortiGate--VM-0D1F4E?style=flat-square" />
-<img src="https://img.shields.io/badge/Link video:-1C3D8F?style=flat-square "/> 
+<img src="https://img.shields.io/badge/Link video:-1C3D8F?style=flat-square "/> https://youtu.be/F2PmjplXZSs
 
 </div>
 
